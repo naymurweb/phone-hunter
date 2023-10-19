@@ -18,8 +18,8 @@
 
     <div class="form-control">
         <div class="input-group justify-center">
-            <input type="text" placeholder="Search your phone " class="input input-bordered w-1/2 " />
-            <button class="btn btn-square">
+            <input id="input" type="text" placeholder="Search your phone " class="input input-bordered w-1/2 " />
+            <button onclick="searchBtn()" class="btn btn-square">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -28,8 +28,21 @@
             </button>
         </div>
     </div>
+    </section>
+
+    <div class="text-center my-10 hidden" id="loading">
+        <span class="loading loading-spinner text-primary"></span>
+        <span class="loading loading-spinner text-secondary"></span>
+        <span class="loading loading-spinner text-accent"></span>
+      </div>    
+
+
+    <section id="card-container" class="grid grid-cols-3 gap-5 my-20">
 
     </section>
+
+
+
 
 
     <script src="./js/phones.js"></script>
